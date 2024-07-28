@@ -296,8 +296,9 @@ final class QueryUpdateOnSubscribe<T> implements OnSubscribe<T> {
         if (!subscriber.isUnsubscribed()) {
             debug("onCompleted");
             subscriber.onCompleted();
-        } else
+        } else {
             debug("unsubscribed");
+        }
     }
 
     /**
